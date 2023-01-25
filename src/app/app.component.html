@@ -1,0 +1,12 @@
+<ng-container>
+  <div
+    *ngFor="let character of rickCharacters.results"
+    class="card"
+    style="width: 18rem;"
+  >
+    <img class="card-img-top" [src]="character.image" alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title">{{ character.name }}</h5>
+    </div>
+  </div>
+</ng-container>
